@@ -1,12 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Football Club Barcelona</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css
+    ">
+
+    <style>
+        .banner-color {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-color: #151515b0;
+
+        }
+
+        .card-part {
+            background-color: black;
+        }
+
+        .img-upper {
+            max-height: 20rem;
+        }
+
+        footer {
+            background-color: black;
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        footer p {
+            color: white;
+        }
+    </style>
+
 </head>
+
 <body>
-    
+    <section>
+        <div class="banner-section container-fluid g-0 position-relative">
+            <img class="img-fluid" src="img/banner.jpg" alt="">
+            <div class="banner-color">
+
+            </div>
+            <div class="container position-absolute top-50 start-50 translate-middle text-center">
+                <h1 class="fw-bold display-1"><span class="text-primary">Football</span> <span
+                        class="text-light">Club</span> <span class="text-danger">Barcelona</span></h1>
+                <p class="text-light w-50 m-auto d-sm-block d-none">Futbol Club Barcelona, commonly referred to as
+                    Barcelona and colloquially known as Barça, is a professional football club based in Barcelona,
+                    Catalonia, Spain, that competes in La Liga, the top flight of Spanish football. </p>
+            </div>
+        </div>
+    </section>
+    <section class="card-part">
+        <div class="cotainer-box">
+            <div class="row">
+                <div class="col-lg-9 col-12 order-lg-1 order-2">
+                    <div class="row row-cols-md-3 row-cols-sm-2 row-cols-1 gy-4">
+
+                        <div class="col">
+                            <div class="card border-secondary">
+                                <img src="img/pique.jpg" class="img-upper" alt="...">
+                                <div class="card-body bg-black text-white text-center">
+                                    <h4 class="card-title">Gerard Piqué</h4>
+                                    <p class="text-muted">10 Goals <span>.</span> 5 Assist</p>
+                                    <button href="#" class="btn btn-primary w-100 card-btn">SELECT</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card border-secondary">
+                                <img src="img/pedri.jpg" class="img-upper" alt="...">
+                                <div class="card-body bg-black text-white text-center">
+                                    <h4 class="card-title">Pedri</h4>
+                                    <p class="text-muted">20Goals <span>.</span> 10 Assist</p>
+                                    <button href="#" class="btn btn-primary w-100 card-btn">SELECT</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card border-secondary">
+                                <img src="img/pena.jpg" class="img-upper" alt="...">
+                                <div class="card-body bg-black text-white text-center">
+                                    <h4 class="card-title">
+                                        Iñaki Peña</h4>
+                                    <p class="text-muted">Goal Keeper <span>.</span> 90 % Goal Save</p>
+                                    <button href="#" class="btn btn-primary w-100 card-btn">SELECT</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card border-secondary">
+                                <img src="img/Ferran Torres.jpeg" class="img-upper" alt="...">
+                                <div class="card-body bg-black text-white text-center">
+                                    <h4 class="card-title">Ferran Torres</h4>
+                                    <p class="text-muted">30 Goals <span>.</span> 15 Assist</p>
+                                    <button href="#" class="btn btn-primary w-100 card-btn">SELECT</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card border-secondary">
+                                <img src="img/Memphis Depay.jpg" class="img-upper" alt="...">
+                                <div class="card-body bg-black text-white text-center">
+                                    <h4 class="card-title">Memphis Depay</h4>
+                                    <p class="text-muted">25 Goals <span>.</span> 20 Assist</p>
+                                    <button href="#" class="btn btn-primary w-100 card-btn">SELECT</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card border-secondary">
+                                <img src="img/Robert Lewandowski.jpg" class="img-upper" alt="...">
+                                <div class="card-body bg-black text-white text-center">
+                                    <h4 class="card-title">Robert Lewandowski</h4>
+                                    <p class="text-muted">15 Goals <span>.</span> 25 Assist</p>
+                                    <button href="#" class="btn btn-primary w-100 card-btn">SELECT</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-3 col-12 order-lg-2 order-1 mb-4">
+                    <div class="row row-cols-1 gy-4">
+
+                        <div class="col">
+                            <div class="card border-0">
+                                <div class="card-body bg-black text-white text-center">
+                                    <h5 class="card-title"><span
+                                            class="px-4 py-2 border-4 border-bottom border-danger">Selected Five</span>
+                                    </h5>
+                                    <ol id="order-list" class="text-start">
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card bg-black">
+                                <div class="card-body bg-black text-white text-center">
+                                    <h5 class="card-title mb-5"><span
+                                            class="px-4 py-2 border-4 border-bottom border-danger">Total Budget</span>
+                                    </h5>
+                                    <p class="text-muted d-flex justify-content-between align-items-center">
+                                        <span>Per
+                                            Player</span><input class="bg-black w-50 px-1 py-2 text-white" type="text"
+                                            name="" id="player-value">
+                                    </p>
+                                    <button class="btn btn-primary w-100" id="calculate-btn">Calculate</button>
+                                    <p class="text-muted mt-3">Player Expenses: $<span id="player-expenses">0000</span>
+                                    </p>
+                                    <p class="text-muted d-flex justify-content-between align-items-center">
+                                        <span>Manager</span><input class="bg-black w-50 px-1 py-2 text-white"
+                                            type="text" name="" id="manager-value">
+                                    </p>
+                                    <p class="text-muted d-flex justify-content-between align-items-center">
+                                        <span>Coach</span><input
+                                            class="bg-black w-50 px-1 py-2 text-white border-white-1" type="text"
+                                            name="" id="coach-value">
+                                    </p>
+                                    <button class="btn btn-primary w-100" id="total-calculate-btn">Total
+                                        Calculate</button>
+                                    <p class="mt-3">Total: $<span id="total-cost"></span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer>
+        <p>Copyright @ 2022 All Rights Reserved</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="design.js"></script>
 </body>
+
 </html>
